@@ -1,0 +1,335 @@
+﻿<Window xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"  x:Class="ChartFinal.MainWindow"
+        xmlns:datavis ="clr-namespace:System.Windows.Controls.DataVisualization;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChartFinal"
+        mc:Ignorable="d"
+         Height="350" Width="848" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+ 
+        <StackPanel  Margin="0,9,0,0"  >
+
+            <StackPanel  Orientation="Horizontal" >
+                <Label Content="From :" />
+                <ComboBox Margin="3,0,0,0" Name="FromHours" >
+                    <ComboBoxItem Content="00"/>
+                    <ComboBoxItem Content="01" IsSelected="True"/>
+                    <ComboBoxItem Content="02"/>
+                    <ComboBoxItem Content="03"/>
+                    <ComboBoxItem Content="04"/>
+                    <ComboBoxItem Content="05"/>
+                    <ComboBoxItem Content="06"/>
+                    <ComboBoxItem Content="07"/>
+                    <ComboBoxItem Content="08"/>
+                    <ComboBoxItem Content="09"/>
+                    <ComboBoxItem Content="10"/>
+                    <ComboBoxItem Content="11"/>
+                    <ComboBoxItem Content="12"/>
+                    <ComboBoxItem Content="13"/>
+                    <ComboBoxItem Content="14"/>
+                    <ComboBoxItem Content="15"/>
+                    <ComboBoxItem Content="16"/>
+                    <ComboBoxItem Content="17"/>
+                    <ComboBoxItem Content="18"/>
+                    <ComboBoxItem Content="19"/>
+                    <ComboBoxItem Content="20"/>
+                    <ComboBoxItem Content="21"/>
+                    <ComboBoxItem Content="22"/>
+                    <ComboBoxItem Content="23"/>
+
+
+                </ComboBox>
+                <ComboBox Margin="4,0,0,0" Name="FromMinutes" >
+                    <ComboBoxItem Content="00" IsSelected="True"/>
+                    <ComboBoxItem Content="01"/>
+                    <ComboBoxItem Content="02"/>
+                    <ComboBoxItem Content="03"/>
+                    <ComboBoxItem Content="04"/>
+                    <ComboBoxItem Content="05"/>
+                    <ComboBoxItem Content="06"/>
+                    <ComboBoxItem Content="07"/>
+                    <ComboBoxItem Content="08"/>
+                    <ComboBoxItem Content="09"/>
+                    <ComboBoxItem Content="10"/>
+                    <ComboBoxItem Content="12"/>
+                    <ComboBoxItem Content="13"/>
+                    <ComboBoxItem Content="14"/>
+                    <ComboBoxItem Content="15"/>
+                    <ComboBoxItem Content="16"/>
+                    <ComboBoxItem Content="17"/>
+                    <ComboBoxItem Content="18"/>
+                    <ComboBoxItem Content="19"/>
+                    <ComboBoxItem Content="20"/>
+                    <ComboBoxItem Content="21"/>
+                    <ComboBoxItem Content="22"/>
+                    <ComboBoxItem Content="23"/>
+                    <ComboBoxItem Content="24"/>
+                    <ComboBoxItem Content="25"/>
+                    <ComboBoxItem Content="26"/>
+                    <ComboBoxItem Content="27"/>
+                    <ComboBoxItem Content="28"/>
+                    <ComboBoxItem Content="29"/>
+                    <ComboBoxItem Content="30"/>
+                    <ComboBoxItem Content="31"/>
+                    <ComboBoxItem Content="32"/>
+                    <ComboBoxItem Content="36"/>
+                    <ComboBoxItem Content="37"/>
+                    <ComboBoxItem Content="38"/>
+                    <ComboBoxItem Content="39"/>
+                    <ComboBoxItem Content="40"/>
+                    <ComboBoxItem Content="41"/>
+                    <ComboBoxItem Content="42"/>
+                    <ComboBoxItem Content="43"/>
+                    <ComboBoxItem Content="44"/>
+                    <ComboBoxItem Content="45"/>
+                    <ComboBoxItem Content="46"/>
+                    <ComboBoxItem Content="47"/>
+                    <ComboBoxItem Content="48"/>
+                    <ComboBoxItem Content="49"/>
+                    <ComboBoxItem Content="50"/>
+                    <ComboBoxItem Content="51"/>
+                    <ComboBoxItem Content="52"/>
+                    <ComboBoxItem Content="53"/>
+                    <ComboBoxItem Content="54"/>
+                    <ComboBoxItem Content="55"/>
+                    <ComboBoxItem Content="56"/>
+                    <ComboBoxItem Content="57"/>
+                    <ComboBoxItem Content="58"/>
+                    <ComboBoxItem Content="59"/>
+
+
+                </ComboBox>
+                <Label Content="To :" />
+                <ComboBox Margin="3,0,0,0" Name="ToHours" >
+                    <ComboBoxItem Content="00" IsSelected="True" />
+                    <ComboBoxItem Content="01"/>
+                    <ComboBoxItem Content="02"/>
+                    <ComboBoxItem Content="03"/>
+                    <ComboBoxItem Content="04"/>
+                    <ComboBoxItem Content="05"/>
+                    <ComboBoxItem Content="06"/>
+                    <ComboBoxItem Content="07"/>
+                    <ComboBoxItem Content="08"/>
+                    <ComboBoxItem Content="09"/>
+                    <ComboBoxItem Content="10" IsSelected="True"/>
+                    <ComboBoxItem Content="12"/>
+                    <ComboBoxItem Content="13"/>
+                    <ComboBoxItem Content="14"/>
+                    <ComboBoxItem Content="15"/>
+                    <ComboBoxItem Content="16"/>
+                    <ComboBoxItem Content="17"/>
+                    <ComboBoxItem Content="18"/>
+                    <ComboBoxItem Content="19"/>
+                    <ComboBoxItem Content="20"/>
+                    <ComboBoxItem Content="21"/>
+                    <ComboBoxItem Content="22"/>
+                    <ComboBoxItem Content="23"/>
+
+
+                </ComboBox>
+                <ComboBox Margin="4,0,0,0" Name="Tominutes" >
+                    <ComboBoxItem Content="00"/>
+                    <ComboBoxItem Content="01"/>
+                    <ComboBoxItem Content="02"/>
+                    <ComboBoxItem Content="03"/>
+                    <ComboBoxItem Content="04"/>
+                    <ComboBoxItem Content="05"/>
+                    <ComboBoxItem Content="06"/>
+                    <ComboBoxItem Content="07"/>
+                    <ComboBoxItem Content="08"/>
+                    <ComboBoxItem Content="09"/>
+                    <ComboBoxItem Content="10"/>
+                    <ComboBoxItem Content="12"/>
+                    <ComboBoxItem Content="13"/>
+                    <ComboBoxItem Content="14"/>
+                    <ComboBoxItem Content="15"/>
+                    <ComboBoxItem Content="16"/>
+                    <ComboBoxItem Content="17"/>
+                    <ComboBoxItem Content="18"/>
+                    <ComboBoxItem Content="19"/>
+                    <ComboBoxItem Content="20"/>
+                    <ComboBoxItem Content="21"/>
+                    <ComboBoxItem Content="22"/>
+                    <ComboBoxItem Content="23"/>
+                    <ComboBoxItem Content="24"/>
+                    <ComboBoxItem Content="25"/>
+                    <ComboBoxItem Content="26"/>
+                    <ComboBoxItem Content="27"/>
+                    <ComboBoxItem Content="28"/>
+                    <ComboBoxItem Content="29"/>
+                    <ComboBoxItem Content="30"/>
+                    <ComboBoxItem Content="31"/>
+                    <ComboBoxItem Content="32"/>
+                    <ComboBoxItem Content="36"/>
+                    <ComboBoxItem Content="37"/>
+                    <ComboBoxItem Content="38"/>
+                    <ComboBoxItem Content="39"/>
+                    <ComboBoxItem Content="40"/>
+                    <ComboBoxItem Content="41"/>
+                    <ComboBoxItem Content="42"/>
+                    <ComboBoxItem Content="43"/>
+                    <ComboBoxItem Content="44"/>
+                    <ComboBoxItem Content="45"/>
+                    <ComboBoxItem Content="46"/>
+                    <ComboBoxItem Content="47"/>
+                    <ComboBoxItem Content="48"/>
+                    <ComboBoxItem Content="49"/>
+                    <ComboBoxItem Content="50"/>
+                    <ComboBoxItem Content="51"/>
+                    <ComboBoxItem Content="52"/>
+                    <ComboBoxItem Content="53"/>
+                    <ComboBoxItem Content="54"/>
+                    <ComboBoxItem Content="55"/>
+                    <ComboBoxItem Content="56"/>
+                    <ComboBoxItem Content="57"/>
+                    <ComboBoxItem Content="58"/>
+                    <ComboBoxItem Content="59" IsSelected="True"/>
+
+
+                </ComboBox>
+                <Label Content="Show Data For : "/>
+                <ComboBox Name="recordtype" >
+                    <ComboBoxItem Content="Current" IsSelected="True" />
+
+                    <ComboBoxItem Content="Processed"/>
+
+                </ComboBox>
+                <Button Content="Show" Margin="4,0,0,0" Click="Button_Click_1" />
+                <Button Content="Export" Margin="4,0,0,0" Click="Button_Click_2" />
+                <Label Name="lable1" Content="Auto Refresh In - " />
+                <Button Content="Refresh"  Margin="6,0,0,0" Click="Button_Click" />
+
+            </StackPanel>
+            <!--<StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <Label Content="Application Name" Foreground="Blue" FontWeight="Bold" FontSize="18.667" />
+            </StackPanel>-->
+        </StackPanel>
+        <chartingToolkit:Chart x:Name="ItsAchart"  >
+
+            <chartingToolkit:Chart.Palette>
+                <datavis:ResourceDictionaryCollection>
+
+                    <ResourceDictionary>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="Blue"/>
+                            <Setter Property="Width" Value="12.0"/>
+                            <Setter Property="Height" Value="12.0"/>
+
+                            <Setter Property="BorderBrush" Value="White"/>
+                            <Setter Property="BorderThickness" Value="2"/>
+                            <Setter Property="IsTabStop" Value="False"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="chartingToolkit:LineDataPoint">
+                                        <Grid x:Name="Root" Opacity="1" >
+                                            <ToolTipService.ToolTip>
+                                                <StackPanel>
+                                                    <ContentControl Foreground="{TemplateBinding Background}" Content="{TemplateBinding IndependentValue}" ContentStringFormat="Date : {0 :h:mm tt}"/>
+                                                    <ContentControl Foreground="{TemplateBinding Background}" Content="{TemplateBinding DependentValue}" ContentStringFormat="Case : {0:#,##,##,###}"/>
+                                                </StackPanel>
+                                            </ToolTipService.ToolTip>
+                                            <Ellipse  StrokeThickness="{TemplateBinding BorderThickness}" Stroke="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Background}" />
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ResourceDictionary>
+                    <ResourceDictionary>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="#FF32B800"/>
+                            <Setter Property="Width" Value="12.0"/>
+                            <Setter Property="Height" Value="12.0"/>
+
+                            <Setter Property="BorderBrush" Value="White"/>
+                            <Setter Property="BorderThickness" Value="2"/>
+                            <Setter Property="IsTabStop" Value="False"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="chartingToolkit:LineDataPoint">
+                                        <Grid x:Name="Root" Opacity="1" >
+                                            <ToolTipService.ToolTip>
+                                                <StackPanel>
+                                                    <ContentControl Foreground="{TemplateBinding Background}" Content="{TemplateBinding IndependentValue}" ContentStringFormat="Date : {0 :h:mm tt}"/>
+                                                    <ContentControl Foreground="{TemplateBinding Background}" Content="{TemplateBinding DependentValue}" ContentStringFormat="Case : {0:#,##,##,###}"/>
+                                                </StackPanel>
+                                            </ToolTipService.ToolTip>
+                                            <Ellipse  StrokeThickness="{TemplateBinding BorderThickness}" Stroke="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Background}" />
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+
+
+                        </Style>
+                    </ResourceDictionary>
+                    <ResourceDictionary>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="#FFFF00E8"/>
+                            <Setter Property="Width" Value="12.0"/>
+                            <Setter Property="Height" Value="12.0"/>
+
+                            <Setter Property="BorderBrush" Value="White"/>
+                            <Setter Property="BorderThickness" Value="2"/>
+                            <Setter Property="IsTabStop" Value="False"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="chartingToolkit:LineDataPoint">
+                                        <Grid x:Name="Root" Opacity="1" >
+                                            <ToolTipService.ToolTip>
+                                                <StackPanel>
+                                                    <ContentControl Foreground="{TemplateBinding Background}" Content="{TemplateBinding IndependentValue}" ContentStringFormat="Date : {0 :h:mm tt}"/>
+                                                    <ContentControl Foreground="{TemplateBinding Background}" Content="{TemplateBinding DependentValue}" ContentStringFormat="Case : {0:#,##,##,###}"/>
+                                                </StackPanel>
+                                            </ToolTipService.ToolTip>
+                                            <Ellipse  StrokeThickness="{TemplateBinding BorderThickness}" Stroke="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Background}" />
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ResourceDictionary>
+                    <ResourceDictionary>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="Red"/>
+                            <Setter Property="Width" Value="12.0"/>
+                            <Setter Property="Height" Value="12.0"/>
+
+                            <Setter Property="BorderBrush" Value="White"/>
+                            <Setter Property="BorderThickness" Value="2"/>
+                            <Setter Property="IsTabStop" Value="False"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="chartingToolkit:LineDataPoint">
+                                        <Grid x:Name="Root" Opacity="1" >
+                                            <ToolTipService.ToolTip>
+                                                <StackPanel>
+                                                    <ContentControl Foreground="{TemplateBinding Background}" Content="{TemplateBinding IndependentValue}" ContentStringFormat="Date : {0 :h:mm tt}"/>
+                                                    <ContentControl Foreground="{TemplateBinding Background}" Content="{TemplateBinding DependentValue}" ContentStringFormat="Case : {0:#,##,##,###}"/>
+                                                </StackPanel>
+                                            </ToolTipService.ToolTip>
+                                            <Ellipse  StrokeThickness="{TemplateBinding BorderThickness}" Stroke="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Background}" />
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ResourceDictionary>
+                </datavis:ResourceDictionaryCollection>
+            </chartingToolkit:Chart.Palette>
+
+        </chartingToolkit:Chart>
+
+
+
+
+        <StackPanel Name="queueselector" VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal"  Margin="0,0,5,5" >
+
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
